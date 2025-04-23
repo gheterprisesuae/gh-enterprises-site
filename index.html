@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GH Enterprises UAE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5efe4;
+      color: #0f1b2b;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #f5efe4;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 1rem;
+      animation: slideDown 1s ease-in-out;
+    }
+    nav a {
+      color: #f5efe4;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.5s ease;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+      transform: scale(1);
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .contact-form button {
+      padding: 0.75rem;
+      background-color: #0f1b2b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #1a2b3c;
+    }
+    .contact-info {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .contact-info a {
+      display: block;
+      color: #0f1b2b;
+      text-decoration: none;
+      margin: 0.5rem 0;
+    }
+    .social-media {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .social-media img {
+      width: 150px;
+      height: auto;
+      margin-top: 1rem;
+      animation: fadeIn 2s ease;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0f1b2b;
+      color: #f5efe4;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="gh_logo.png" alt="GH Enterprises Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to GH Enterprises</h1>
+    <p>Your one-stop shop for packing materials, perfumes, apparel, footwear, and unique gift items in the UAE.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>GH Enterprises is dedicated to offering high-quality products at competitive prices. We serve businesses and individual customers across the UAE with a versatile selection of goods ranging from practical packing solutions to stylish wear and thoughtful gifts.</p>
+  </section>
+
+  <section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1603145733142-8ba04c6b6c34?auto=format&fit=crop&w=500&q=60" alt="Packing Materials">
+        Packing Materials
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1613090383658-00dfead98e37?auto=format&fit=crop&w=500&q=60" alt="Perfumes">
+        Perfumes
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600185365522-63e1f1c23092?auto=format&fit=crop&w=500&q=60" alt="Apparel & Footwear">
+        Apparel & Footwear
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1522780209446-8c4f6cdd78b4?auto=format&fit=crop&w=500&q=60" alt="Gift Items">
+        Gift Items
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <a href="mailto:ghenterprisesuae@gmail.com">📧 ghenterprisesuae@gmail.com</a>
+      <a href="https://wa.me/971509340313" target="_blank">📱 WhatsApp: +971 50 934 0313</a>
+    </div>
+    <div class="social-media">
+      <h3>Follow us on Instagram</h3>
+      <img src="ghenterprisesuae_qr.png" alt="Instagram QR Code">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 GH Enterprises UAE. All rights reserved.<br />
+    <a href="mailto:ghenterprisesuae@gmail.com" style="color: #f5efe4; text-decoration: underline;">ghenterprisesuae@gmail.com</a> |
+    <a href="https://wa.me/971509340313" style="color: #f5efe4; text-decoration: underline;">WhatsApp</a>
+  </footer>
+</body>
+</html>
